@@ -40,7 +40,8 @@ public class Graph
         Node start = FindNode(startId);
         Node end = FindNode(endId);
 
-        if(start == null || end == null){
+        if(startId  == endId){
+            pathList.Clear();
             return false;
         }
 
